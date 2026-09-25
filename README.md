@@ -36,9 +36,23 @@ playwright install chromium
 python main.py
 ```
 
-### 3. Run a Specific Scraper (Scrapes ALL Available Jobs by Default)
+### 3. Run Specific Scrapers
+
+#### Hireorbit:
 ```bash
 python main.py --scraper hireorbit --query "software engineer"
+```
+
+#### Zipline (Dynamic Title, Location & Infinite Scroll):
+```bash
+# Search by title & location (e.g. Australia):
+python main.py --scraper zipline --query "internship" --location "Australia"
+
+# Search all Software Engineer jobs across all locations:
+python main.py --scraper zipline --query "software engineer"
+
+# Visible browser mode:
+python main.py --scraper zipline --query "software engineer" --headed
 ```
 
 ### 4. Search with Custom Limit

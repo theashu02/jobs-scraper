@@ -49,8 +49,8 @@ def parse_args():
     parser.add_argument(
         "--location",
         type=str,
-        default="Remote",
-        help="Target location (default: 'Remote')",
+        default="",
+        help="Target location filter (default: all locations, or pass e.g. 'Australia', 'Remote')",
     )
     parser.add_argument(
         "--limit",
