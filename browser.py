@@ -44,6 +44,7 @@ class BrowserManager:
                 "--disable-setuid-sandbox",
                 "--disable-infobars",
                 "--disable-dev-shm-usage",
+                "--disable-http2",
                 "--window-size=1920,1080",
                 "--start-maximized",
             ]

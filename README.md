@@ -55,6 +55,15 @@ python main.py --scraper zipline --query "software engineer"
 python main.py --scraper zipline --query "software engineer" --headed
 ```
 
+#### JobDiva Candidate Portal:
+```bash
+# Search jobs by keyword (e.g. Software, Engineer, Developer):
+python main.py --scraper jobdiva --query "Software"
+
+# Run in headed mode to watch it search and open each job:
+python main.py --scraper jobdiva --query "Software" --limit 5 --headed
+```
+
 ### 4. Search with Custom Limit
 You can limit the number of jobs if you only want a few:
 ```bash
