@@ -64,6 +64,18 @@ python main.py --scraper jobdiva --query "Software"
 python main.py --scraper jobdiva --query "Software" --limit 5 --headed
 ```
 
+#### ApplyNxt (Authenticated Browser + Backend API):
+```bash
+# Search software engineer roles with default authentication:
+python main.py --scraper applynxt --query "software engineer"
+
+# Fetch first 20 jobs:
+python main.py --scraper applynxt --query "software engineer" --limit 20
+
+# Run in headed browser mode to watch automated login:
+python main.py --scraper applynxt --query "software engineer" --limit 10 --headed
+```
+
 ### 4. Search with Custom Limit
 You can limit the number of jobs if you only want a few:
 ```bash
